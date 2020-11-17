@@ -1,0 +1,10 @@
+  <ul>
+    <li *ngFor="let livro of livros">
+        {{ livro.titulo }}
+        <ol>
+            <li *ngFor="let autor of livro.autores">
+                {{ autor.sobrenome | uppercase }}, {{autor.nome | titlecase}}    
+            </li>
+        </ol>
+    </li>
+</ul>
