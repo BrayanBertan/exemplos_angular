@@ -13,9 +13,9 @@ export class LivrosComponent implements OnInit {
   
   constructor() {
     this.livros = [
-      new Livro("Teste 1" ,[new Autor("A","B")]),
-      new Livro("Teste 2" ,[new Autor("C","D"),new Autor("E","F")]),
-      new Livro("Teste 3" ,[new Autor("G","H")]),
+      new Livro("Teste 1" ,[new Autor("A","B")],3),
+      new Livro("Teste 2" ,[new Autor("C","D"),new Autor("E","F")],1),
+      new Livro("Teste 3" ,[new Autor("G","H")],0),
     ]
    }
 

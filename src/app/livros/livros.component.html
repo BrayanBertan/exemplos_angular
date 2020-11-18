@@ -6,5 +6,9 @@
                 {{ autor.sobrenome | uppercase }}, {{autor.nome | titlecase}}    
             </li>
         </ol>
+        <div>
+            <button *ngIf="livro.estoque > 0">Disponivel</button>
+            <button *ngIf="livro.estoque==0" disabled>Indisponivel</button>
+        </div>
     </li>
 </ul>
